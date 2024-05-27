@@ -17,6 +17,7 @@ main {
   color: #5e6778;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
+  font-size: 16px;
 }
 header {
   display: flex;
@@ -26,6 +27,7 @@ header {
 }
 h1 {
   color: #1c202b;
+  font-size: 24px;
 }
 nav {
   display: flex;
@@ -56,6 +58,12 @@ nav {
 .notice img {
   width: 45px;
   height: 45px;
+}
+.notice div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /**Continue***/
 }
 .rizky {
   align-self: flex-start;
