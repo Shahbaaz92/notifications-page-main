@@ -14,12 +14,14 @@
       <header>
         <nav>
           <h1>Notifications</h1>
-          <span class="notification">3</span>
+          <span class="notification" id="notification">3</span>
         </nav>
-        <p class="read">Mark all as read</p>
+        <p class="all-read" id="all-read">
+          Mark all as <span class="read" id="read">read</span>
+        </p>
       </header>
-      <section>
-        <article class="notice">
+      <section class="notice-section">
+        <article class="notice unread">
           <img
             src="./assets/images/avatar-mark-webber.webp"
             alt="Mark Webber"
@@ -27,22 +29,26 @@
           <div>
             <p>
               <strong>Mark Webber</strong> reacted to your recent post
-              <strong class="grey">My first tournament today!</strong>
+              <strong class="grey">My first tournament today!</strong
+              ><span class="unread-dot"></span>
             </p>
             <p>1m ago</p>
           </div>
         </article>
-        <article class="notice">
+        <article class="notice unread">
           <img
             src="./assets/images/avatar-angela-gray.webp"
             alt="Angela Gray"
           />
           <div>
-            <p><strong>Angela Gray</strong> followed you</p>
+            <p>
+              <strong>Angela Gray</strong> followed you
+              <span class="unread-dot"></span>
+            </p>
             <p>5m ago</p>
           </div>
         </article>
-        <article class="notice">
+        <article class="notice unread">
           <img
             src="./assets/images/avatar-jacob-thompson.webp"
             alt="Jacob Thompson"
@@ -50,7 +56,8 @@
           <div>
             <p>
               <strong>Jacob Thompson</strong> has joined your group
-              <strong class="blue">Chess Club</strong>
+              <strong class="blue">Chess Club</strong
+              ><span class="unread-dot"></span>
             </p>
             <p>1 day ago</p>
           </div>
@@ -64,7 +71,7 @@
           <div>
             <p><strong>Rizky Hasanuddin</strong> sent you a private message</p>
             <p>5 days ago</p>
-            <blockquote>
+            <blockquote class="message-hover">
               Hello, thanks for setting up the Chess Club. I've been a member
               for a few weeks now and I'm already having lots of fun and
               improving my game.
@@ -111,5 +118,6 @@
         </article>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

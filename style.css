@@ -5,13 +5,14 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  width: 730px;
-  border: 1px solid;
+  max-width: 730px;
+
   height: auto;
   padding: 20px;
   color: #5e6778;
@@ -38,33 +39,34 @@ nav {
 .notification {
   background-color: #0a327b;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 6px;
   font-weight: 800;
 }
-.read:hover,
-.read:focus {
+.all-read:hover,
+.all-read:focus {
   color: #0a327b;
   cursor: pointer;
 }
 
+.notice-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .notice {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 100%;
   position: relative;
+  padding: 10px;
+  border-radius: 8px;
 }
 .notice img {
   width: 45px;
   height: 45px;
 }
-.notice div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /**Continue***/
-}
+
 .rizky {
   align-self: flex-start;
   margin-top: 20px;
@@ -84,4 +86,35 @@ strong:hover {
 }
 .blue {
   color: #0a327b;
+}
+
+.unread {
+  background-color: #f7fafd;
+}
+.message-hover {
+  padding: 10px;
+  border-radius: 5px;
+}
+.message-hover:hover,
+.message-hover:focus {
+  cursor: pointer;
+  background-color: #e5effa;
+}
+.unread-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #f65552;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .notice .chess {
+    position: relative;
+  }
+  p,
+  strong {
+    font-size: 14px;
+  }
 }
