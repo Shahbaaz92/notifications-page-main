@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  border: 1px solid;
+  height: auto;
+  padding: 20px;
+  color: #5e6778;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+h1 {
+  color: #1c202b;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.notification {
+  background-color: #0a327b;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+.read:hover,
+.read:focus {
+  color: #0a327b;
+  cursor: pointer;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+}
+.notice img {
+  width: 45px;
+  height: 45px;
+}
+.rizky {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+.notice .chess {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+strong {
+  color: #1c202b;
+  font-weight: 800;
+}
+strong:hover {
+  color: #0a327b;
+  cursor: pointer;
+}
+.blue {
+  color: #0a327b;
+}
